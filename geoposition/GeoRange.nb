@@ -1,0 +1,298 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12007,        290]
+NotebookOptionsPosition[     10143,        239]
+NotebookOutlinePosition[     10484,        254]
+CellTagsIndexPosition[     10441,        251]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"input", "=", 
+  RowBox[{
+  "SemanticInterpretation", "[", "\"\<European capital cities locations\>\"", 
+   "]"}]}], "\n", 
+ RowBox[{
+  RowBox[{"getCities", "[", "input", "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"GeoGraphics", "[", 
+     RowBox[{"#", ",", 
+      RowBox[{"GeoRange", "\[Rule]", "2000"}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", "512"}]}], "]"}], "&"}], "/@", 
+   RowBox[{"GeoPosition", "/@", "input"}]}]}]}], "Input",
+ CellChangeTimes->{{3.707679457588106*^9, 3.7076795399002523`*^9}, {
+   3.7076795805508165`*^9, 3.7076796031732616`*^9}, {3.7076796616933656`*^9, 
+   3.707679667114196*^9}, {3.7076797667471066`*^9, 3.70767980281837*^9}, {
+   3.707680012579541*^9, 3.707680095565288*^9}, {3.7076801639074087`*^9, 
+   3.7076801772318325`*^9}, {3.7076803406273212`*^9, 3.707680343406126*^9}, {
+   3.7076803815395937`*^9, 3.7076804731111555`*^9}, 3.707680615570407*^9, {
+   3.7076808054350224`*^9, 3.7076808367166815`*^9}, {3.7076808860621715`*^9, 
+   3.7076809057578077`*^9}, {3.7076809615897236`*^9, 
+   3.7076809660357313`*^9}, {3.7076811663173056`*^9, 3.707681170202713*^9}, {
+   3.707681202523987*^9, 3.70768121491881*^9}, {3.7076819798096685`*^9, 
+   3.7076819801226864`*^9}, {3.7076851313297324`*^9, 
+   3.7076851384961452`*^9}, {3.7076852351633425`*^9, 
+   3.7076852760532303`*^9}, {3.707685339289159*^9, 3.7076853524497843`*^9}},
+ CellID->24,ExpressionUUID->"76999134-ceb7-46a4-8bb9-5f9cb6b84180"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "GeoPosition","invpos",
+   "\"\\!\\(\\*RowBox[{\\\"Missing\\\", \\\"[\\\", \\\"\\\\\\\"NotAvailable\\\
+\\\\\"\\\", \\\"]\\\"}]\\) is not a valid position specification.\"",2,16,13,
+   25935132472660931284,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.7076852777858334`*^9, 3.707685285213446*^9}, {
+  3.7076853408063617`*^9, 
+  3.707685352792985*^9}},ExpressionUUID->"fc3d004e-a91a-494c-a2f7-\
+71f2c0251417"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{
+  3.707685352792985*^9},ExpressionUUID->"3680f952-e59f-44b8-b8a5-\
+982688b72f93"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.707679457588106*^9, 3.7076795399002523`*^9}, {
+   3.7076795805508165`*^9, 3.7076796031732616`*^9}, {3.7076796616933656`*^9, 
+   3.707679667114196*^9}, {3.7076797667471066`*^9, 3.70767980281837*^9}, {
+   3.707680012579541*^9, 3.707680095565288*^9}, {3.7076801639074087`*^9, 
+   3.7076801772318325`*^9}, {3.7076803406273212`*^9, 3.707680343406126*^9}, {
+   3.7076803815395937`*^9, 3.7076804731111555`*^9}, 3.707680615570407*^9, {
+   3.7076808054350224`*^9, 3.7076808367166815`*^9}, {3.7076808860621715`*^9, 
+   3.707680923664242*^9}, 
+   3.7076809578425055`*^9},ExpressionUUID->"9676146d-ace5-41d4-b070-\
+28939d057d9e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"getCities", "[", "input", "]"}]], "Input",
+ CellChangeTimes->{{3.7076806669366975`*^9, 3.7076806702751036`*^9}, 
+   3.7076807667747493`*^9, {3.707680845720897*^9, 3.7076808470469*^9}, {
+   3.7076809301084547`*^9, 3.707680934570062*^9}, {3.7076809780365534`*^9, 
+   3.707681161869897*^9}},ExpressionUUID->"e4295ce4-f125-425f-8022-\
+787a9b744f2d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "LatitudeLongitude","invloc",
+   "\"\\!\\(\\*RowBox[{\\\"GeoPosition\\\", \\\"[\\\", \
+InterpretationBox[DynamicModuleBox[{EntityFramework`Formatting`Private`open = \
+False}, TemplateBox[List[TemplateBox[List[\\\"\\\\\\\"cities\\\\\\\"\\\"], \\\
+\"ImplicitEntityClassBase\\\"], \
+TagBox[GridBox[List[List[TemplateBox[List[RowBox[List[\\\"EntityProperty\\\", \
+\\\"[\\\", RowBox[List[\\\"\\\\\\\"City\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Country\\\\\\\"\\\"]], \\\"]\\\"]], \\\"\\\\\\\":\\\\\\\"\\\", \
+RowBox[List[\\\"Entity\\\", \\\"[\\\", \
+RowBox[List[\\\"\\\\\\\"Country\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"France\\\\\\\"\\\"]], \\\"]\\\"]]], \
+\\\"ImplicitEntityInfoRow\\\"]], \
+List[TemplateBox[List[RowBox[List[\\\"EntityProperty\\\", \\\"[\\\", \
+RowBox[List[\\\"\\\\\\\"City\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Population\\\
+\\\\\"\\\"]], \\\"]\\\"]], \\\"\\\\\\\":\\\\\\\"\\\", \
+RowBox[List[\\\"TakeLargest\\\", \\\"[\\\", \\\"10\\\", \\\"]\\\"]]], \
+\\\"ImplicitEntityInfoRow\\\"]]], Rule[GridBoxAlignment, \
+List[Rule[\\\"Columns\\\", List[List[Left]]]]], Rule[DefaultBaseStyle, \
+\\\"GeneralizedEntityInfoGrid\\\"], Rule[GridBoxItemSize, \
+List[Rule[\\\"Columns\\\", List[List[Automatic]]], Rule[\\\"Rows\\\", \
+List[List[Automatic]]]]]], \\\"Column\\\"], \
+Dynamic[EntityFramework`Formatting`Private`open], \
+\\\"\\\\\\\"EntityClass[\\\\\\\\\\\\\\\"City\\\\\\\\\\\\\\\", \
+{EntityProperty[\\\\\\\\\\\\\\\"City\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"Country\
+\\\\\\\\\\\\\\\"] -> Entity[\\\\\\\\\\\\\\\"Country\\\\\\\\\\\\\\\", \\\\\\\\\
+\\\\\\\"France\\\\\\\\\\\\\\\"], \
+EntityProperty[\\\\\\\\\\\\\\\"City\\\\\\\\\\\\\\\", \
+\\\\\\\\\\\\\\\"Population\\\\\\\\\\\\\\\"] -> \
+TakeLargest[10]}]\\\\\\\"\\\"], \\\"ImplicitEntityToggle\\\"]], \
+EntityClass[\\\"City\\\", List[Rule[EntityProperty[\\\"City\\\", \
+\\\"Country\\\"], Entity[\\\"Country\\\", \\\"France\\\"]], \
+Rule[EntityProperty[\\\"City\\\", \\\"Population\\\"], TakeLargest[10]]]], \
+Rule[SelectWithContents, True]], \\\"]\\\"}]\\) is not a valid location \
+specification.\"",2,3,1,25935132472660931284,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7076851243017197`*^9},ExpressionUUID->"2f2b276b-f9f1-4c69-a998-\
+82cbcb0ffe4b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "GeoGraphics","wdata",
+   "\"Unable to download data for ranges \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \
+\\\"0.018087389535605607`\\\"}], \\\",\\\", \\\"0.018087389535570673`\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \
+\\\"0.01796630568239043`\\\"}], \\\",\\\", \\\"0.01796630568239043`\\\"}], \\\
+\"}\\\"}]}], \\\"}\\\"}]\\) and zoom level \\!\\(\\*RowBox[{\\\"15\\\"}]\\) \
+from the Wolfram geo server.\"",2,3,2,25935132472660931284,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7076851248175206`*^9},ExpressionUUID->"f1cbe2a5-08c5-4ee9-bb49-\
+5a9723bed840"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "LatitudeLongitude","invloc",
+   "\"\\!\\(\\*RowBox[{\\\"GeoPosition\\\", \\\"[\\\", \
+RowBox[{\\\"EntityProperty\\\", \\\"[\\\", RowBox[{\\\"\\\\\\\"City\\\\\\\"\\\
+\", \\\",\\\", \\\"\\\\\\\"Coordinates\\\\\\\"\\\"}], \\\"]\\\"}], \
+\\\"]\\\"}]\\) is not a valid location specification.\"",2,3,3,
+   25935132472660931284,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7076851248331203`*^9},ExpressionUUID->"39c2612f-c1cb-4afc-a198-\
+8dace57674db"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "GeoGraphics","wdata",
+   "\"Unable to download data for ranges \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \
+\\\"0.018087389535605607`\\\"}], \\\",\\\", \\\"0.018087389535570673`\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"-\\\", \
+\\\"0.01796630568239043`\\\"}], \\\",\\\", \\\"0.01796630568239043`\\\"}], \\\
+\"}\\\"}]}], \\\"}\\\"}]\\) and zoom level \\!\\(\\*RowBox[{\\\"15\\\"}]\\) \
+from the Wolfram geo server.\"",2,3,4,25935132472660931284,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7076851248955207`*^9},ExpressionUUID->"0425ecb7-3af6-4b74-bdcf-\
+fb8fdbfcfe95"],
+
+Cell[BoxData[
+ RowBox[{"EntityValue", "[", 
+  RowBox[{
+   GraphicsBox[{},
+    DefaultBaseStyle->"GeoGraphics",
+    Method->{"GeoGraphicsOptions" -> {}}], ",", 
+   GraphicsBox[{},
+    DefaultBaseStyle->"GeoGraphics",
+    Method->{"GeoGraphicsOptions" -> {}}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.707680794019001*^9, 3.7076808474213*^9}, {
+   3.7076809350692635`*^9, 3.7076809424348774`*^9}, {3.7076809904907765`*^9, 
+   3.707681042941474*^9}, {3.7076811031395874`*^9, 3.7076811448796654`*^9}, 
+   3.7076811764477243`*^9, 3.707681270029922*^9, 3.7076819849973173`*^9, 
+   3.7076851248955207`*^9},ExpressionUUID->"fbee3889-69ce-4e80-a943-\
+8cb16a083051"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7076804936759915`*^9, 3.7076805184860353`*^9}, {
+  3.7076805860179543`*^9, 3.707680591368764*^9}, {3.707680643234256*^9, 
+  3.707680656090678*^9}},ExpressionUUID->"9b5a879f-8ac9-4a37-9828-\
+fd10051478ff"],
+
+Cell[BoxData[
+ RowBox[{"getCities", "[", 
+  RowBox[{"Missing", "[", 
+   RowBox[{"\<\"UnknownEntity\"\>", ",", 
+    RowBox[{"{", 
+     RowBox[{"\<\"GeographicRegion\"\>", ",", "\<\"France\"\>"}], "}"}]}], 
+   "]"}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.707680558336506*^9, {3.707680625460824*^9, 
+   3.707680653079873*^9}},ExpressionUUID->"ec0bc848-44a1-4513-9e06-\
+16da1676b4cb"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.7076808340158763`*^9, {3.7076811771029253`*^9, 
+   3.7076811788525295`*^9}},ExpressionUUID->"4a37e5d6-1a65-4081-9914-\
+200108d38ff8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SemanticInterpretation", "[", "\"\<Europe\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.7076852911416593`*^9, 
+  3.707685381613844*^9}},ExpressionUUID->"7821647a-a68d-42bb-86ae-\
+f0e98e618c99"],
+
+Cell[BoxData[
+ TemplateBox[{"\"Europe\"",RowBox[{"Entity", "[", 
+     RowBox[{"\"GeographicRegion\"", ",", "\"Europe\""}], "]"}],
+   "\"Entity[\\\"GeographicRegion\\\", \\\"Europe\\\"]\"",
+   "\"geographic region\""},
+  "Entity"]], "Output",
+ CellChangeTimes->{{3.7076852981858797`*^9, 3.707685304860092*^9}, 
+   3.7076853884712563`*^9, 3.707685956164716*^9, 
+   3.707686007752174*^9},ExpressionUUID->"8dd586af-310c-4672-a6ff-\
+635c26dda628"]
+}, Open  ]]
+},
+WindowSize->{944, 982},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1455, 27, 50, "Input", "ExpressionUUID" -> \
+"76999134-ceb7-46a4-8bb9-5f9cb6b84180",
+ CellID->24],
+Cell[2038, 51, 465, 10, 21, "Message", "ExpressionUUID" -> \
+"fc3d004e-a91a-494c-a2f7-71f2c0251417"],
+Cell[2506, 63, 136, 3, 30, "Output", "ExpressionUUID" -> \
+"3680f952-e59f-44b8-b8a5-982688b72f93"]
+}, Open  ]],
+Cell[2657, 69, 666, 10, 30, "Input", "ExpressionUUID" -> \
+"9676146d-ace5-41d4-b070-28939d057d9e"],
+Cell[CellGroupData[{
+Cell[3348, 83, 369, 6, 30, "Input", "ExpressionUUID" -> \
+"e4295ce4-f125-425f-8022-787a9b744f2d"],
+Cell[3720, 91, 2264, 39, 26, "Message", "ExpressionUUID" -> \
+"2f2b276b-f9f1-4c69-a998-82cbcb0ffe4b"],
+Cell[5987, 132, 702, 13, 21, "Message", "ExpressionUUID" -> \
+"f1cbe2a5-08c5-4ee9-bb49-5a9723bed840"],
+Cell[6692, 147, 508, 11, 21, "Message", "ExpressionUUID" -> \
+"39c2612f-c1cb-4afc-a198-8dace57674db"],
+Cell[7203, 160, 702, 13, 21, "Message", "ExpressionUUID" -> \
+"0425ecb7-3af6-4b74-bdcf-fb8fdbfcfe95"],
+Cell[7908, 175, 657, 14, 107, "Output", "ExpressionUUID" -> \
+"fbee3889-69ce-4e80-a943-8cb16a083051"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8602, 194, 253, 4, 30, "Input", "ExpressionUUID" -> \
+"9b5a879f-8ac9-4a37-9828-fd10051478ff"],
+Cell[8858, 200, 384, 10, 30, "Output", "ExpressionUUID" -> \
+"ec0bc848-44a1-4513-9e06-16da1676b4cb"]
+}, Open  ]],
+Cell[9257, 213, 184, 4, 30, "Input", "ExpressionUUID" -> \
+"4a37e5d6-1a65-4081-9914-200108d38ff8"],
+Cell[CellGroupData[{
+Cell[9466, 221, 216, 4, 30, "Input", "ExpressionUUID" -> \
+"7821647a-a68d-42bb-86ae-f0e98e618c99"],
+Cell[9685, 227, 442, 9, 76, "Output", "ExpressionUUID" -> \
+"8dd586af-310c-4672-a6ff-635c26dda628"]
+}, Open  ]]
+}
+]
+*)
+
